@@ -53,7 +53,7 @@ def analizar_columna(df: pd.DataFrame, columna: str, table : bool = True, plot :
 
         plt.tight_layout()
         plt.show()
-        return(info)
+        print(info)
 
     else:
         # Si la columna es categórica, obtener el conteo por categoría
@@ -85,7 +85,7 @@ def analizar_columna(df: pd.DataFrame, columna: str, table : bool = True, plot :
                 plt.grid(axis = 'y', linestyle = '--', alpha = 0.7)
                 plt.show()
         if table == True:
-            return(info)
+            print(info)
         
 '''------------------------------------------------------------------------------------------------------------------'''
 ### Análisis bibariado de datos numéricos
