@@ -132,9 +132,9 @@ def analisis_bivariado_categorico(data : pd.DataFrame, var1 : str, var2 : str, t
     n = contingency_table.sum().sum()
     k = min(contingency_table.shape)
     cramers_v = np.sqrt(chi2 / (n * (k - 1)))
-    if cramers_v >= 0.5:
-        print(f'Prueba Chi-cuadrado de las variables {var1} y {var2}')
-        print(f'Chi-cuadrado: {chi2}, p-valor: {p}, Cramer´s V: {cramers_v}')
+    #if cramers_v >= 0.5:
+    print(f'Prueba Chi-cuadrado de las variables {var1} y {var2}')
+    print(f'Chi-cuadrado: {chi2}, p-valor: {p}, Cramer´s V: {cramers_v}')
     
 
 ### Análisis bivariado de variables numéricas y categóricas
